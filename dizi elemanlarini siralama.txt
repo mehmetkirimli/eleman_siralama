@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class W101 {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print ("Dizinin eleman sayisi kac olsun ? ");
+
+        int boyut = input.nextInt();
+
+        int[] list = new int[boyut];
+
+        for (int i = 0; i < list.length; i++) {
+            System.out.println("Dizinin " + i + ". elemanini gir : ");
+            list[i] = input.nextInt();
+        }
+        System.out.println(Arrays.toString(list));
+        Arrays.sort(list);
+        System.out.println(Arrays.toString(list));
+    }
+}
